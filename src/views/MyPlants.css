@@ -1,0 +1,125 @@
+/* MyPlants.css */
+
+.myplants-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Title */
+.myplants-container h2 {
+  margin-bottom: 1.5rem;
+  color: #1a3c1b;
+}
+
+.search {
+  margin: 1rem 0;
+}
+
+/* SEARCH */
+.search {
+  margin: 1rem 0 1.5rem;
+}
+
+.search input {
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 320px;
+  background: white;
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #1f7a3a;
+  box-shadow: 0 0 0 2px rgba(31, 122, 58, 0.15);
+}
+
+/* Form */
+.plant-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.plant-form input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.plant-form button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.plant-form button:hover {
+  background-color: #1b5e20;
+}
+
+/* Grid like on Home page */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* Cards */
+.plant-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.plant-card h4 {
+  margin-bottom: 0.5rem;
+  color: #1a3c1b;
+}
+
+.plant-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+/* ===== ROW ===== */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+/* Delete button */
+.delete-btn {
+  margin-top: 0.7rem;
+  background: #d32f2f;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #9a1f1f;
+}
+
+
+/* ===== BUTTON ===== */
+.button {
+  padding: 0.5rem 0.8rem;
+  background: #1f7a3a;
+  color: white;
+  border-radius: 8px;
+}

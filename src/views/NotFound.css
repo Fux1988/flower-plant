@@ -1,0 +1,25 @@
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #104621;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+section a {
+  color: #409f5a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section a:hover {
+  text-decoration: underline;
+}

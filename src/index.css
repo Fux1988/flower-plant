@@ -1,0 +1,185 @@
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: #b5cab5;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+
+* GLOBAL LAYOUT FIX */
+html, body {
+  height: 100%;
+}
+
+#root {
+height: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+
+/* PlantItem.css */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  color: #0c290d;
+}
+
+.card button {
+  background-color: #135f15;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #c73113;
+}
+
+
+/* Header.css */
+header {
+  background-color: #1a3c1b;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+header nav a:hover {
+  color: #b5ffdb;
+}
+
+
+/* Footer.css */
+footer {
+  background-color: #114617;
+  color: #ccc;
+  padding: 2rem;
+
+}
+
+.footer-inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.containerFooter {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer a {
+  color: #61dafb;
+}
+
+footer a:hover {
+  color: #25631b;
+}
+
+
+
+/* ABOUT SECTION */
+.about {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.about-card h3 {
+  margin-bottom: 0.5rem;
+  color: #1a3c1b;
+  text-align: center;
+}
+
+.about-card p {
+  color: #555;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero {
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 220px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+}
